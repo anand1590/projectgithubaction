@@ -32,3 +32,8 @@ jobs:
         sudo apt-get install trivy -y
     - name: Trivy Scan Filesystem
       run: trivy fs --format table -o fs-report.txt .
+    - name: Upload Scan Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: security-report
+        path: fs-report.txt
