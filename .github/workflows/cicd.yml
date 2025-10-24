@@ -51,7 +51,7 @@ jobs:
     - name: Run Unit tests
       run: mvn test
 
-  Build-project and sonarqube-scan:
+  Build-project-sonarqube-scan:
     runs-on: self-hosted
     steps:
     - uses: actions/checkout@v4
