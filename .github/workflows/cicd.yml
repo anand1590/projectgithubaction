@@ -64,7 +64,6 @@ jobs:
         cache: maven
     - name: Build Project
       run: mvn package
-    - name: SonarQube Scan
     - uses: actions/checkout@v4
       with:
         fetch-depth: 0
